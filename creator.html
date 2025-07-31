@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creator Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff; padding: 1rem; max-width: 600px; margin: auto; }
+    h2 { color: #333; }
+    label { display: block; margin-top: 1rem; font-weight: bold; }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover { background: #1976D2; }
+    .back { margin-top: 2rem; display: block; color: #2196F3; text-align: center; }
+  </style>
+</head>
+<body>
+  <h2>Upload Your Sketch</h2>
+  <label>Audio File</label>
+  <input type="file" />
+
+  <label>Title</label>
+  <input type="text" placeholder="Enter a title for your sketch" />
+
+  <label>Description</label>
+  <textarea placeholder="Describe your track and vision..."></textarea>
+
+  <label>Genre</label>
+  <select>
+    <option>Rock</option>
+    <option>Hip-Hop</option>
+    <option>Jazz</option>
+    <option>Electronic</option>
+    <option>Pop</option>
+  </select>
+
+  <label>Creation Stage</label>
+  <select>
+    <option>Rough Sketch</option>
+    <option>Almost Finished</option>
+    <option>Needs Production</option>
+  </select>
+
+  <label>Inspiration / References</label>
+  <input type="text" placeholder="e.g. Radiohead, Hans Zimmer, etc." />
+
+  <label>AI Summary Box</label>
+  <textarea placeholder="Auto-generated feedback summary (coming soon!)"></textarea>
+
+  <button>Submit Sketch</button>
+  <a class="back" href="index.html">← Back to Home</a>
+</body>
+</html>
