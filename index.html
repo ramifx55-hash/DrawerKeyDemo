@@ -3,36 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DrawerKey - NEW VERSION</title>
+  <title>DrawerKey</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #121212, #6002ee);
+      background: linear-gradient(135deg, #1e1e2f, #3f3f5f);
       color: #fff;
       text-align: center;
       padding: 2rem;
       margin: 0;
     }
     h1 {
-      font-size: 2.8rem;
-      margin-top: 1rem;
-      color: #ffeb3b;
+      font-size: 2.4rem;
+      margin: 0.5rem 0;
     }
-    p {
+    p.slogan {
       font-size: 1.2rem;
-      color: #ccc;
+      margin-bottom: 1.5rem;
+      color: #ffb6d5;
     }
     .logo {
-      width: 80px;
-      height: 80px;
       margin-bottom: 1rem;
     }
     .button {
       font-size: 1.2rem;
       margin: 1rem;
       padding: 1rem 2rem;
-      background: #03dac6;
-      color: black;
+      background: #ff4081;
+      color: white;
       border: none;
       border-radius: 30px;
       cursor: pointer;
@@ -40,14 +38,16 @@
     }
     .button:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 10px #03dac6;
+      box-shadow: 0 0 10px #ff4081;
     }
   </style>
 </head>
 <body>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Music_Icon.svg/2048px-Music_Icon.svg.png" alt="Logo" class="logo" />
-  <h1>DrawerKey – NEW VERSION</h1>
-  <p>This version has a purple background and updated title</p>
+  <div class="logo">
+    <img src="logo.svg" alt="Logo" width="80" height="80"/>
+  </div>
+  <h1>DrawerKey</h1>
+  <p class="slogan">Free your music</p>
   <button class="button" onclick="location.href='creator.html'">🎶 I’m a Creator</button>
   <button class="button" onclick="location.href='producer.html'">🎧 I’m a Producer</button>
 </body>
