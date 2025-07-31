@@ -1,33 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DrawerKey - Let Your Music Emerge</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; background: #eef2f7; padding: 40px; }
-        h1 { color: #2c3e50; }
-        p { font-size: 1.1em; color: #34495e; }
-        a.button {
-            display: inline-block;
-            margin: 15px;
-            padding: 14px 28px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-        a.button:hover {
-            background-color: #2980b9;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DrawerKey - NEW VERSION</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #121212, #6002ee);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-top: 1rem;
+      color: #ffeb3b;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+    .button {
+      font-size: 1.2rem;
+      margin: 1rem;
+      padding: 1rem 2rem;
+      background: #03dac6;
+      color: black;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #03dac6;
+    }
+  </style>
 </head>
 <body>
-    <h1>🎵 Welcome to DrawerKey</h1>
-    <p>DrawerKey is where unfinished tracks and creative sparks come to life. Whether you're a budding creator or a seasoned producer looking to give feedback and discover talent — you've come to the right place.</p>
-    <p>Choose your role to begin:</p>
-    <a href="creator.html" class="button">🎧 I'm a Creator</a>
-    <a href="producer.html" class="button">🎛️ I'm a Producer</a>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Music_Icon.svg/2048px-Music_Icon.svg.png" alt="Logo" class="logo" />
+  <h1>DrawerKey – NEW VERSION</h1>
+  <p>This version has a purple background and updated title</p>
+  <button class="button" onclick="location.href='creator.html'">🎶 I’m a Creator</button>
+  <button class="button" onclick="location.href='producer.html'">🎧 I’m a Producer</button>
 </body>
 </html>

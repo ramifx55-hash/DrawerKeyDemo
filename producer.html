@@ -1,42 +1,103 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Producer Page</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f0f8ff; padding: 20px; }
-        h1 { color: #2e4053; }
-        .container { background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 12px rgba(0,0,0,0.1); }
-        .section { margin-bottom: 20px; }
-        label { font-weight: bold; display: block; margin-bottom: 5px; }
-        select, input, textarea { width: 100%; padding: 10px; margin-bottom: 10px; }
-        a { display: inline-block; margin-top: 20px; text-decoration: none; color: #2e86de; }
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Producer Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3f3f5f);
+      color: #fff;
+      padding: 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2, h3 {
+      color: #ff4081;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: none;
+      border-radius: 6px;
+      background: #2a2a3f;
+      color: #fff;
+    }
+    textarea::placeholder, input::placeholder {
+      color: #bbb;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      background: #2a2a3f;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 6px;
+    }
+    a {
+      color: #80deea;
+      text-decoration: none;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ff4081;
+    }
+    .back {
+      margin-top: 2rem;
+      display: block;
+      color: #ffb6d5;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Producer Dashboard</h1>
-        <div class="section">
-            <label for="intro">Your short bio:</label>
-            <textarea id="intro" rows="3" placeholder="e.g. Music producer for 15 years, specialized in electronic and indie styles..."></textarea>
-        </div>
-        <div class="section">
-            <label for="style">Preferred Genres:</label>
-            <select id="style">
-                <option>Pop</option>
-                <option>Rock</option>
-                <option>Electronic</option>
-                <option>Jazz</option>
-                <option>Classical</option>
-                <option>Other</option>
-            </select>
-        </div>
-        <div class="section">
-            <label for="feedback">Write your feedback:</label>
-            <textarea id="feedback" rows="4" placeholder="Provide your feedback on the selected track..."></textarea>
-        </div>
-        <a href="index.html">⬅️ Back to Home</a>
-    </div>
+  <h2>Producer Profile</h2>
+  <label>Your Bio</label>
+  <textarea placeholder="Tell artists about your style, experience, and what you're looking for..."></textarea>
+
+  <h3>Sketches Available for Review</h3>
+  <ul>
+    <li>🎵 Dreamscape No. 1 - <a href="#">Listen</a></li>
+    <li>🎵 Urban Beat Raw - <a href="#">Listen</a></li>
+    <li>🎵 Untitled Ballad - <a href="#">Listen</a></li>
+  </ul>
+
+  <h3>Rate a Track</h3>
+  <label>Track Title</label>
+  <input type="text" placeholder="Which track are you reviewing?" />
+
+  <label>Composition</label>
+  <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+
+  <label>Sound Quality</label>
+  <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+
+  <label>Production Potential</label>
+  <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+
+  <label>Feedback</label>
+  <textarea placeholder="Share your thoughts, ideas or suggestions for this track..."></textarea>
+
+  <button>Submit Feedback</button>
+  <a class="back" href="index.html">← Back to Home</a>
 </body>
 </html>
