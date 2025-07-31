@@ -10,7 +10,7 @@
       background: linear-gradient(135deg, #1e1e2f, #3f3f5f);
       color: #fff;
       padding: 1rem;
-      max-width: 700px;
+      max-width: 800px;
       margin: auto;
     }
     h2 {
@@ -53,6 +53,23 @@
       color: #ffb6d5;
       text-align: center;
     }
+    .ai-summary {
+      margin-top: 2rem;
+      background: #292943;
+      border-left: 6px solid #ff4081;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .ai-summary h3 {
+      margin-top: 0;
+      color: #ffeb3b;
+    }
+    .ai-summary ul {
+      padding-left: 1.2rem;
+    }
+    .ai-summary li {
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -85,10 +102,19 @@
   <label>Inspiration / References</label>
   <input type="text" placeholder="e.g. Radiohead, Hans Zimmer, etc." />
 
-  <label>AI Summary Box</label>
-  <textarea placeholder="Auto-generated feedback summary (coming soon!)"></textarea>
-
   <button>Submit Sketch</button>
+
+  <div class="ai-summary">
+    <h3>🧠 AI Feedback Summary</h3>
+    <p><strong>Track:</strong> "Dreamscape No.1"</p>
+    <ul>
+      <li>🎧 "Beautiful harmony, but intro feels too long"</li>
+      <li>🎤 "Vocals could be more present in the mix"</li>
+      <li>🥁 "Interesting idea – needs stronger beat"</li>
+    </ul>
+    <p><strong>🎯 Recommended Producer:</strong> <em>Alex Groove – Ambient / Vocal Layering Specialist</em></p>
+  </div>
+
   <a class="back" href="index.html">← Back to Home</a>
 </body>
 </html>
