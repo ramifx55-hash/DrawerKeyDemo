@@ -1,67 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Creator Dashboard</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #fff; padding: 1rem; max-width: 600px; margin: auto; }
-    h2 { color: #333; }
-    label { display: block; margin-top: 1rem; font-weight: bold; }
-    input, select, textarea {
-      width: 100%;
-      padding: 0.6rem;
-      margin-top: 0.3rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      margin-top: 1.5rem;
-      padding: 0.8rem 1.5rem;
-      background: #2196F3;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover { background: #1976D2; }
-    .back { margin-top: 2rem; display: block; color: #2196F3; text-align: center; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Creator Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+        h1 { color: #333366; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .section { margin-bottom: 20px; }
+        label { display: block; margin-top: 10px; }
+        input, textarea, select, button { width: 100%; padding: 8px; margin-top: 5px; }
+        a { display: inline-block; margin-top: 20px; text-decoration: none; color: #333366; }
+    </style>
 </head>
 <body>
-  <h2>Upload Your Sketch</h2>
-  <label>Audio File</label>
-  <input type="file" />
-
-  <label>Title</label>
-  <input type="text" placeholder="Enter a title for your sketch" />
-
-  <label>Description</label>
-  <textarea placeholder="Describe your track and vision..."></textarea>
-
-  <label>Genre</label>
-  <select>
-    <option>Rock</option>
-    <option>Hip-Hop</option>
-    <option>Jazz</option>
-    <option>Electronic</option>
-    <option>Pop</option>
-  </select>
-
-  <label>Creation Stage</label>
-  <select>
-    <option>Rough Sketch</option>
-    <option>Almost Finished</option>
-    <option>Needs Production</option>
-  </select>
-
-  <label>Inspiration / References</label>
-  <input type="text" placeholder="e.g. Radiohead, Hans Zimmer, etc." />
-
-  <label>AI Summary Box</label>
-  <textarea placeholder="Auto-generated feedback summary (coming soon!)"></textarea>
-
-  <button>Submit Sketch</button>
-  <a class="back" href="index.html">← Back to Home</a>
+    <div class="container">
+        <h1>Creator Dashboard</h1>
+        <div class="section">
+            <label for="upload">Upload Your Sketch (MP3):</label>
+            <input type="file" id="upload" accept=".mp3">
+        </div>
+        <div class="section">
+            <label for="description">Describe Your Track:</label>
+            <textarea id="description" rows="4" placeholder="Tell us about your track, what it means to you, or what kind of feedback you're looking for..."></textarea>
+        </div>
+        <div class="section">
+            <label for="genre">Select Genre:</label>
+            <select id="genre">
+                <option>Pop</option>
+                <option>Rock</option>
+                <option>Hip Hop</option>
+                <option>Electronic</option>
+                <option>Classical</option>
+                <option>Jazz</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="section">
+            <label for="ai-summary">AI Feedback Summary:</label>
+            <textarea id="ai-summary" rows="4" placeholder="AI-generated summary of all received feedback..." readonly></textarea>
+        </div>
+        <a href="index.html">⬅️ Back to Home</a>
+    </div>
 </body>
 </html>

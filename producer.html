@@ -1,62 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Producer Dashboard</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #fff; padding: 1rem; max-width: 700px; margin: auto; }
-    h2, h3 { color: #333; }
-    label { display: block; margin-top: 1rem; font-weight: bold; }
-    input, select, textarea {
-      width: 100%;
-      padding: 0.6rem;
-      margin-top: 0.3rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      margin-top: 1.5rem;
-      padding: 0.8rem 1.5rem;
-      background: #FF5722;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover { background: #E64A19; }
-    .back { margin-top: 2rem; display: block; color: #FF5722; text-align: center; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Producer Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f8ff; padding: 20px; }
+        h1 { color: #2e4053; }
+        .container { background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 12px rgba(0,0,0,0.1); }
+        .section { margin-bottom: 20px; }
+        label { font-weight: bold; display: block; margin-bottom: 5px; }
+        select, input, textarea { width: 100%; padding: 10px; margin-bottom: 10px; }
+        a { display: inline-block; margin-top: 20px; text-decoration: none; color: #2e86de; }
+    </style>
 </head>
 <body>
-  <h2>Producer Profile</h2>
-  <label>Your Bio</label>
-  <textarea placeholder="Tell artists about your style, experience, and what you're looking for..."></textarea>
-
-  <h3>Sketches Available for Review</h3>
-  <ul>
-    <li>🎵 Dreamscape No. 1 - <a href="#">Listen</a></li>
-    <li>🎵 Urban Beat Raw - <a href="#">Listen</a></li>
-    <li>🎵 Untitled Ballad - <a href="#">Listen</a></li>
-  </ul>
-
-  <h3>Rate a Track</h3>
-  <label>Track Title</label>
-  <input type="text" placeholder="Which track are you reviewing?" />
-
-  <label>Composition</label>
-  <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-
-  <label>Sound Quality</label>
-  <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-
-  <label>Production Potential</label>
-  <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-
-  <label>Feedback</label>
-  <textarea placeholder="Share your thoughts, ideas or suggestions for this track..."></textarea>
-
-  <button>Submit Feedback</button>
-  <a class="back" href="index.html">← Back to Home</a>
+    <div class="container">
+        <h1>Producer Dashboard</h1>
+        <div class="section">
+            <label for="intro">Your short bio:</label>
+            <textarea id="intro" rows="3" placeholder="e.g. Music producer for 15 years, specialized in electronic and indie styles..."></textarea>
+        </div>
+        <div class="section">
+            <label for="style">Preferred Genres:</label>
+            <select id="style">
+                <option>Pop</option>
+                <option>Rock</option>
+                <option>Electronic</option>
+                <option>Jazz</option>
+                <option>Classical</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="section">
+            <label for="feedback">Write your feedback:</label>
+            <textarea id="feedback" rows="4" placeholder="Provide your feedback on the selected track..."></textarea>
+        </div>
+        <a href="index.html">⬅️ Back to Home</a>
+    </div>
 </body>
 </html>
