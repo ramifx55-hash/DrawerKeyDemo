@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creator Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3f3f5f);
+      color: #fff;
+      padding: 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff4081;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: none;
+      border-radius: 6px;
+      background: #2a2a3f;
+      color: #fff;
+    }
+    textarea::placeholder, input::placeholder {
+      color: #bbb;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ff4081;
+    }
+    .back {
+      margin-top: 2rem;
+      display: block;
+      color: #ffb6d5;
+      text-align: center;
+    }
+    .ai-summary {
+      margin-top: 2rem;
+      background: #292943;
+      border-left: 6px solid #ff4081;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .ai-summary h3 {
+      margin-top: 0;
+      color: #ffeb3b;
+    }
+    .ai-summary ul {
+      padding-left: 1.2rem;
+    }
+    .ai-summary li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>Upload Your Sketch</h2>
+  <label>Audio File</label>
+  <input type="file" />
+
+  <label>Title</label>
+  <input type="text" placeholder="Enter a title for your sketch" />
+
+  <label>Description</label>
+  <textarea placeholder="Describe your track and vision..."></textarea>
+
+  <label>Genre</label>
+  <select>
+    <option>Rock</option>
+    <option>Hip-Hop</option>
+    <option>Jazz</option>
+    <option>Electronic</option>
+    <option>Pop</option>
+  </select>
+
+  <label>Creation Stage</label>
+  <select>
+    <option>Rough Sketch</option>
+    <option>Almost Finished</option>
+    <option>Needs Production</option>
+  </select>
+
+  <label>Inspiration / References</label>
+  <input type="text" placeholder="e.g. Radiohead, Hans Zimmer, etc." />
+
+  <button>Submit Sketch</button>
+
+  <div class="ai-summary">
+    <h3>🧠 AI Feedback Summary</h3>
+    <p><strong>Track:</strong> Based on your recent upload</p>
+    <ul>
+      <li>🎵 “Strong melodic concept with cinematic potential”</li>
+      <li>🎚️ “Mix could benefit from more space for vocals”</li>
+      <li>🔥 “Hook is memorable – keep developing this idea”</li>
+    </ul>
+    <p><strong>🎯 Suggested Producer:</strong> <em>Mia Tones – Indie / Female Vocals Specialist</em></p>
+  </div>
+
+  <a class="back" href="index.html">← Back to Home</a>
+</body>
+</html>
