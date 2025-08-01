@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creator | DrawerKey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            padding: 40px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #666;
+            text-align: center;
+            margin-top: 0;
+        }
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        input[type="file"] {
+            margin-top: 10px;
+        }
+        .submit-btn {
+            background-color: #2c8be0;
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #106fba;
+        }
+        .section {
+            background: #f9f9f9;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .coin-note {
+            font-style: italic;
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        img.coin {
+            width: 20px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        a.home-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 16px;
+            color: #2c8be0;
+            text-decoration: none;
+        }
+        a.home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creator Page</h1>
+    <h2>Free your music</h2>
+
+    <form>
+        <label for="title">🎵 Song Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter the name of your track">
+
+        <label for="desc">📝 Describe Your Sketch</label>
+        <textarea id="desc" name="desc" rows="4" placeholder="What's the idea? What's missing? What do you dream this track will become?"></textarea>
+
+        <label for="genre">🎼 Genre</label>
+        <select id="genre" name="genre">
+            <option>Pop</option>
+            <option>Rock</option>
+            <option>Electronic</option>
+            <option>Jazz</option>
+            <option>Classical</option>
+            <option>Hip-Hop</option>
+            <option>Other</option>
+        </select>
+
+        <label for="stage">📍 Production Stage</label>
+        <select id="stage" name="stage">
+            <option>Idea</option>
+            <option>Loop / Sketch</option>
+            <option>Partial Arrangement</option>
+            <option>Full Demo</option>
+        </select>
+
+        <label for="inspiration">🎧 Inspirations / References</label>
+        <input type="text" id="inspiration" name="inspiration" placeholder="Artist names, songs, or styles you're aiming for">
+
+        <label for="file">📁 Upload Sketch File</label>
+        <input type="file" id="file" name="file">
+
+        <div class="coin-note">
+            Earn Drawer Coins (DC) for uploading your sketch! <img src="dc_coin_icon.png" class="coin" alt="DC Icon">
+        </div>
+
+        <button class="submit-btn">Upload Sketch</button>
+    </form>
+
+    <div class="section">
+        <h3>✨ AI Summary</h3>
+        <p><strong>Track:</strong> [Auto-filled from your title]</p>
+        <p><strong>Key Notes:</strong> "Energetic rhythm, needs polish on vocals. Consider alternative chord for chorus."</p>
+        <p><strong>Recommended Producer:</strong> SoundSmith / LunaLoops</p>
+        <p class="coin-note">AI Summary will soon offer extra DC bonus 🎁</p>
+    </div>
+
+    <a class="home-link" href="index.html">← Back to Home</a>
+</body>
+</html>
