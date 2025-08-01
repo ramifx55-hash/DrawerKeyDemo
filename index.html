@@ -2,13 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>DrawerKey</title>
+  <title>DrawerKey - Free your music</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #4DD0E1;
+    }
+    h2 {
+      font-weight: normal;
+      color: #ddd;
+      margin-bottom: 2rem;
+    }
+    .button {
+      font-size: 1.2rem;
+      margin: 1rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+    .creator { background-color: #7C4DFF; color: #fff; }
+    .producer { background-color: #00BFA5; color: #fff; }
+    .listener { background-color: #FF69B4; color: #fff; }
+    .business { background-color: #4DD0E1; color: #000; }
+  </style>
 </head>
-<body style="text-align: center; font-family: sans-serif; background-color: #fff;">
-  <h1>Free your music</h1>
-  <button onclick="location.href='creator.html'">🎼 I'm a Creator</button>
-  <button onclick="location.href='producer.html'">🎛️ I’m a Producer</button>
-  <button style="background-color:#FF69B4;" onclick="location.href='listeners.html'">🩷 I’m a Listener</button>
-  <button style="background-color:#4DD0E1;" onclick="location.href='partners.html'">🤝 I'm a Business</button>
+<body>
+  <h1>🎵 DrawerKey</h1>
+  <h2>Free your music</h2>
+  <button class="button creator" onclick="location.href='creator.html'">🎼 I'm a Creator</button>
+  <button class="button producer" onclick="location.href='producer.html'">🎛️ I’m a Producer</button>
+  <button class="button listener" onclick="location.href='listeners.html'">🩷 I’m a Listener</button>
+  <button class="button business" onclick="location.href='partners.html'">🤝 I'm a Business</button>
 </body>
 </html>
