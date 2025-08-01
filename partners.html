@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Business Partnerships</title>
+  <title>Business Partnership</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #3f3f5f);
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #fff;
+      font-family: 'Raleway', sans-serif;
       padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      text-align: center;
     }
     h1 {
       color: #4DD0E1;
@@ -20,58 +19,78 @@
     p {
       font-size: 1.1rem;
       color: #ddd;
+      max-width: 750px;
+      margin: 1rem auto;
     }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .highlight {
-      color: #80deea;
-      font-weight: bold;
-    }
-    .note {
-      background: #263238;
-      padding: 1rem;
-      border-radius: 8px;
-      border-left: 6px solid #4DD0E1;
+    form {
+      background: rgba(255,255,255,0.1);
+      padding: 1.5rem;
+      border-radius: 12px;
       margin-top: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .back {
-      margin-top: 2rem;
+    label {
       display: block;
-      text-align: center;
-      color: #80deea;
+      margin: 1rem 0 0.5rem;
+      text-align: left;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    button {
+      background-color: #4DD0E1;
+      color: #000;
+      font-size: 1.1rem;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #26c6da;
+    }
+    a.back {
+      display: block;
+      margin-top: 3rem;
+      color: #4DD0E1;
     }
   </style>
 </head>
 <body>
   <h1>🤝 Partner with DrawerKey</h1>
-  <p>Are you a small business or commercial platform seeking original music, branding sound, or authentic artist collaborations?</p>
-  <p><span class="highlight">DrawerKey</span> enables you to work directly with emerging artists – no traditional middlemen, no inflated agency costs.</p>
+  <p>We help small businesses, content creators, and commercial brands connect with musical talent for projects like jingles, background music, custom campaigns, and more.</p>
 
-  <h2>🚀 Benefits for Businesses:</h2>
-  <ul>
-    <li>🎯 Direct access to a pool of creative, diverse musical talent</li>
-    <li>💰 Cost-effective collaboration on branding, ads, jingles and more</li>
-    <li>🔍 AI-driven matching with creators based on your needs</li>
-    <li>📈 Early access to rising talent and trendsetters</li>
-  </ul>
+  <form>
+    <label for="bizname">Business / Brand Name:</label>
+    <input type="text" id="bizname" name="bizname" required>
 
-  <h2>💡 Platform Value & Future Monetization:</h2>
-  <ul>
-    <li>💼 Paid posting of commercial opportunities</li>
-    <li>📊 Business subscription plans with analytics & project management</li>
-    <li>🪙 Token-based transactions (coming soon)</li>
-    <li>📄 Smart contracts for creator protection and transparent licensing</li>
-  </ul>
+    <label for="industry">Industry / Field:</label>
+    <input type="text" id="industry" name="industry">
 
-  <div class="note">
-    <strong>Fair Use Commitment:</strong><br/>
-    All business users agree to our terms of use: collaborations born on DrawerKey are subject to platform guidelines and commission models. We believe in a fair, creative economy.
-  </div>
+    <label for="goal">What are you looking for?</label>
+    <select id="goal" name="goal">
+      <option value="jingle">🎵 Jingle / Branding Sound</option>
+      <option value="bgmusic">🎬 Background Music</option>
+      <option value="live">🎤 Live Performance / Event</option>
+      <option value="other">📦 Other</option>
+    </select>
 
-  <a class="back" href="index.html">← Back to Home</a>
+    <label for="budget">Estimated Budget:</label>
+    <input type="text" id="budget" name="budget">
+
+    <label for="desc">Project Description:</label>
+    <textarea id="desc" name="desc" rows="4" placeholder="Tell us what you have in mind..."></textarea>
+
+    <button type="submit">🚀 Submit Opportunity</button>
+  </form>
+
+  <a href="index.html" class="back">← Back to Home</a>
 </body>
 </html>
