@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Producer | DrawerKey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            padding: 40px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #666;
+            text-align: center;
+            margin-top: 0;
+        }
+        .section {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+        textarea, input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        .submit-btn {
+            background-color: #2c8be0;
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #106fba;
+        }
+        .coin-note {
+            font-style: italic;
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        img.coin {
+            width: 20px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        a.home-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 16px;
+            color: #2c8be0;
+            text-decoration: none;
+        }
+        a.home-link:hover {
+            text-decoration: underline;
+        }
+        .rating-grid {
+            display: grid;
+            grid-template-columns: 1fr 100px;
+            gap: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Producer Page</h1>
+    <h2>Free your music</h2>
+
+    <div class="section">
+        <label for="bio">🎙️ Short Bio</label>
+        <textarea id="bio" rows="4" placeholder="Tell creators who you are, your style, your approach..."></textarea>
+
+        <label for="genres">🎚️ Preferred Genres</label>
+        <input type="text" id="genres" placeholder="e.g. Electronic, Jazz, Fusion...">
+    </div>
+
+    <div class="section">
+        <h3>🎧 Sketches to Review</h3>
+        <select>
+            <option>Choose a sketch to review...</option>
+            <option>Track: Midnight Pulse - by Luna</option>
+            <option>Track: Dreamfield - by RamiFX</option>
+            <option>Track: Lightpath - by NovaVox</option>
+        </select>
+
+        <div class="rating-grid">
+            <label>🎼 Composition:</label>
+            <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+
+            <label>🔊 Sound Quality:</label>
+            <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+
+            <label>🚀 Production Potential:</label>
+            <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        </div>
+
+        <label for="feedback">📝 Feedback for the Creator</label>
+        <textarea id="feedback" rows="4" placeholder="Your suggestions, ideas, encouragement..."></textarea>
+
+        <div class="coin-note">
+            Earn Drawer Coins (DC) for valuable feedback <img src="dc_coin_icon.png" class="coin" alt="DC Icon">
+        </div>
+
+        <button class="submit-btn">Submit Review</button>
+    </div>
+
+    <a class="home-link" href="index.html">← Back to Home</a>
+</body>
+</html>
