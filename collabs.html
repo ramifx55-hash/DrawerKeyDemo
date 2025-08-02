@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Collabs</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background-color: #fff8e1;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    h2 {
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background-color: #FFD54F;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #FFC107;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Creative Collabs</h1>
+  <h2>Music is the thread. Let's weave together.</h2>
+  <form>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Full Name">
+
+    <label for="field">Your Creative Field</label>
+    <select id="field" name="field">
+      <option value="painting">🎨 Painting / Illustration</option>
+      <option value="dance">💃 Dance / Movement</option>
+      <option value="poetry">📝 Poetry / Writing</option>
+      <option value="photography">📸 Photography</option>
+      <option value="video">🎥 Video / Animation</option>
+      <option value="other">✨ Other</option>
+    </select>
+
+    <label for="link">Link to your work (portfolio or sample)</label>
+    <input type="url" id="link" name="link" placeholder="https://...">
+
+    <label for="description">How does your idea connect to a musical sketch?</label>
+    <textarea id="description" name="description" rows="4" placeholder="Write a few lines..."></textarea>
+
+    <button type="submit">Submit Proposal</button>
+  </form>
+</body>
+</html>
