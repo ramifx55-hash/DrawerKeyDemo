@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Creator Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color:#faf6ff; font-family:'Segoe UI', sans-serif; color:#2c2c2c;">
+  <header style="text-align:center; padding:20px;">
+    <h1 style="color:#5d3fd3; margin-bottom:0;">Creator Dashboard</h1>
+    <p style="font-style:italic; margin-top:0;">Free your music</p>
+    <a href="index.html" style="color:#5d3fd3; text-decoration:underline;">← Back to Home</a>
+  </header>
+
+  <section style="max-width:700px; margin:auto; padding:20px;">
+    <div class="wallet" style="background:#efeaff; padding:15px; border-radius:10px; margin-bottom:20px;">
+      <h3>🪙 DC Balance: <span id="dc-balance">20</span> DC</h3>
+      <p>Earned: <span id="dc-earned">0</span> DC | Spent: <span id="dc-spent">0</span> DC</p>
+    </div>
+
+    <div style="margin-bottom:30px;">
+      <h3>🎵 Upload Your Track</h3>
+      <input type="file" id="upload-file"><br/><br/>
+      <button onclick="uploadTrack()">Upload</button>
+    </div>
+
+    <div style="margin-bottom:30px;">
+      <h3>📄 Describe Your Track</h3>
+      <input type="text" placeholder="Track Name" style="width:100%;"><br/><br/>
+      <textarea placeholder="Describe your track..." style="width:100%;"></textarea><br/><br/>
+      <textarea placeholder="What do you feel is missing?" style="width:100%;"></textarea>
+    </div>
+
+    <div style="margin-bottom:30px;">
+      <h3>💬 Rate Other Tracks</h3>
+      <select>
+        <option>Select a track</option>
+        <option>City Lights</option>
+        <option>Dream State</option>
+      </select><br/><br/>
+      <label>Rating (1–5):</label>
+      <input type="number" id="rating" min="1" max="5"><br/><br/>
+      <textarea placeholder="Write your feedback..." style="width:100%;"></textarea><br/><br/>
+      <button onclick="submitRating()">Submit Rating</button>
+    </div>
+
+    <div style="margin-bottom:30px;">
+      <h3>🛒 Spend Your DC</h3>
+      <button onclick="purchase('Concert Ticket', 5)">🎫 Buy Concert Ticket – 5 DC</button><br/>
+      <button onclick="purchase('Guitar Strings', 3)">🎸 Buy Guitar Strings – 3 DC</button><br/>
+      <button onclick="purchase('Collaborate with Benny', 7)">🤝 Collaborate with Benny – 7 DC</button>
+    </div>
+
+    <div id="ai-summary" style="margin-top:30px; background:#f0e6ff; padding:15px; border-radius:10px;">
+      <h3 style="color:#4b0082;">🤖 AI Summary</h3>
+      <p><strong>Track Name:</strong> Dream Journey</p>
+      <p><strong>Highlights:</strong> Beautiful melody, creative transitions, rich textures</p>
+      <p><strong>Recommended Producer:</strong> Benny Beats</p>
+    </div>
+  </section>
+
+  <script src="js/interactions.js"></script>
+</body>
+</html>
